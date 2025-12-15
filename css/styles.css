@@ -1,0 +1,346 @@
+/* =========================================
+   DIMORA LUXURY DESIGN SYSTEM
+   ========================================= */
+
+:root {
+    /* --- Palette --- */
+    --color-cream: #F9F7F2;
+    --color-cream-dark: #ECE8DE;
+    --color-olive-dark: #2A3025;
+    --color-olive-light: #556B2F;
+    --color-gold: #C5A059;
+    --color-gold-hover: #D4AF37;
+    --color-text-main: #1C1C1C;
+    --color-text-muted: #666666;
+    --color-white: #FFFFFF;
+
+    /* --- Typography --- */
+    --font-display: 'Playfair Display', serif;
+    --font-logo: 'Cinzel', serif;
+    --font-sans: 'Lato', sans-serif;
+
+    /* --- Physics --- */
+    --ease-luxury: cubic-bezier(0.19, 1, 0.22, 1); /* "Exponential" smooth */
+    --shadow-card: 0 15px 40px rgba(0,0,0,0.08);
+    --shadow-float: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* --- Reset & Base --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--color-cream);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; transition: all 0.4s var(--ease-luxury); }
+ul { list-style: none; }
+img { display: block; width: 100%; max-width: 100%; }
+
+/* --- Layout Utilities --- */
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.section-padding { padding: 120px 0; }
+.text-center { text-align: center; }
+
+/* --- Typography --- */
+.main-heading {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: var(--color-olive-dark);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color-gold);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* =========================================
+   HEADER (Glassmorphism)
+   ========================================= */
+#main-header {
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    z-index: 1000;
+    padding: 30px 0;
+    transition: all 0.5s var(--ease-luxury);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#main-header.scrolled {
+    padding: 15px 0;
+    background: rgba(249, 247, 242, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+/* Logo */
+.logo-text {
+    font-family: var(--font-logo);
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    color: var(--color-white);
+    transition: color 0.5s ease;
+}
+#main-header.scrolled .logo-text { color: var(--color-olive-dark); }
+
+/* Nav Links */
+.desktop-nav ul { display: flex; gap: 40px; }
+.nav-link {
+    color: var(--color-white);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+#main-header.scrolled .nav-link, 
+#main-header.scrolled .header-actions a { color: var(--color-olive-dark); }
+
+.nav-link::after {
+    content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 1px;
+    background: var(--color-gold); transition: width 0.4s var(--ease-luxury);
+}
+.nav-link:hover::after { width: 100%; }
+
+.header-actions { display: flex; gap: 25px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-white); }
+
+/* =========================================
+   HERO (Parallax)
+   ========================================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute; top: 0; left: 0; width: 100%; height: 120%; /* Taller for parallax */
+    background: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=2600&auto=format&fit=crop') no-repeat center center/cover;
+    z-index: 1;
+    will-change: transform;
+}
+
+.hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.1) 80%, var(--color-cream));
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative; z-index: 3; text-align: center; width: 100%;
+    transform: translateY(0); opacity: 1; /* For JS animation */
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    color: var(--color-white);
+    text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    margin-bottom: 60px;
+    animation: fadeUp 1.2s var(--ease-luxury);
+}
+
+/* Glass Search Bar */
+.glass-search-bar {
+    display: inline-flex;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    padding: 8px 8px 8px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    max-width: 900px;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: fadeUp 1.4s var(--ease-luxury);
+}
+
+.search-group {
+    flex: 1; padding: 10px 20px;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    text-align: left;
+}
+.search-group:last-of-type { border-right: none; }
+.search-label { display: block; color: rgba(255,255,255,0.8); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.search-input { width: 100%; background: transparent; border: none; color: #fff; font-family: var(--font-display); font-size: 1.1rem; outline: none; }
+.search-input::placeholder { color: rgba(255,255,255,0.6); }
+
+.search-btn {
+    background: var(--color-gold); color: var(--color-olive-dark);
+    border: none; padding: 18px 45px; border-radius: 50px;
+    font-family: var(--font-sans); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.85rem;
+    cursor: pointer; transition: transform 0.3s var(--ease-luxury), background 0.3s;
+}
+.search-btn:hover { background: var(--color-gold-hover); transform: scale(1.05); }
+
+/* =========================================
+   COLLECTIONS (Grid & Cards)
+   ========================================= */
+/* Filter Buttons (Injected by JS) */
+.filter-container {
+    display: flex; justify-content: center; gap: 15px; margin-bottom: 50px; flex-wrap: wrap;
+}
+.filter-btn {
+    background: transparent; border: 1px solid var(--color-olive-dark);
+    color: var(--color-olive-dark); padding: 10px 25px;
+    border-radius: 30px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem;
+    transition: 0.3s;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--color-olive-dark); color: var(--color-white); }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 40px;
+}
+
+.collection-card {
+    position: relative;
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.6s var(--ease-luxury), opacity 0.4s ease;
+}
+
+.collection-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-float); }
+
+.card-img-wrapper { height: 100%; width: 100%; }
+.card-bg {
+    height: 100%; width: 100%; object-fit: cover;
+    transition: transform 1.2s var(--ease-luxury);
+    opacity: 0.9;
+}
+.collection-card:hover .card-bg { transform: scale(1.1); opacity: 1; }
+
+.card-overlay {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    padding: 40px;
+    background: linear-gradient(to top, rgba(20,20,20,0.9), transparent);
+    color: var(--color-white);
+    transform: translateY(10px);
+    transition: transform 0.6s var(--ease-luxury);
+}
+.collection-card:hover .card-overlay { transform: translateY(0); }
+
+.card-meta { display: block; font-size: 0.75rem; letter-spacing: 2px; color: var(--color-gold); margin-bottom: 10px; text-transform: uppercase; }
+.card-title { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 20px; font-weight: 400; }
+
+.card-btn-link {
+    display: inline-block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--color-white); border-bottom: 1px solid var(--color-gold); padding-bottom: 5px;
+    opacity: 0; transform: translateY(20px); transition: all 0.5s var(--ease-luxury) 0.1s;
+}
+.collection-card:hover .card-btn-link { opacity: 1; transform: translateY(0); }
+
+/* Favorite Heart (Injected by JS) */
+.card-heart {
+    position: absolute; top: 20px; right: 20px;
+    width: 40px; height: 40px;
+    background: rgba(255,255,255,0.2); backdrop-filter: blur(5px);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    z-index: 10; color: #fff; cursor: pointer;
+    transition: 0.3s;
+}
+.card-heart:hover { background: #fff; color: #e74c3c; }
+.card-heart.active { background: #fff; color: #e74c3c; }
+
+/* =========================================
+   VISUAL JOURNEY (Masonry Grid)
+   ========================================= */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 350px;
+    gap: 20px;
+}
+.gallery-item { position: relative; overflow: hidden; border-radius: 4px; }
+.gallery-item img { height: 100%; width: 100%; object-fit: cover; transition: transform 0.8s var(--ease-luxury); }
+.gallery-item:hover img { transform: scale(1.08); }
+
+/* Bento Layout */
+.gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+.gallery-item:nth-child(4) { grid-column: span 2; }
+
+/* =========================================
+   FOOTER
+   ========================================= */
+footer {
+    background: var(--color-olive-dark);
+    color: var(--color-cream);
+    padding: 100px 0 40px;
+}
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 60px; }
+.footer-brand p { opacity: 0.6; line-height: 1.6; margin-top: 20px; max-width: 300px; }
+.footer-col h4 { font-family: var(--font-logo); color: var(--color-gold); margin-bottom: 30px; letter-spacing: 1px; }
+.footer-col ul li { margin-bottom: 15px; }
+.footer-col a:hover { color: var(--color-gold); }
+
+.newsletter-input {
+    width: 100%; background: transparent; border-bottom: 1px solid rgba(255,255,255,0.3); border-top: 0; border-left: 0; border-right: 0;
+    padding: 15px 0; color: #fff; outline: none; margin-bottom: 20px;
+}
+.btn-gold-text { background: none; border: none; color: var(--color-gold); text-transform: uppercase; letter-spacing: 2px; cursor: pointer; }
+
+/* =========================================
+   ANIMATIONS & MEDIA QUERIES
+   ========================================= */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal { opacity: 0; transform: translateY(50px); transition: all 1s var(--ease-luxury); }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* Toast Notification */
+.toast {
+    position: fixed; bottom: 30px; right: 30px;
+    background: var(--color-olive-dark); color: var(--color-gold);
+    padding: 15px 30px; border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: translateY(100px); opacity: 0;
+    transition: 0.4s var(--ease-luxury); z-index: 2000;
+    font-family: var(--font-sans); letter-spacing: 1px; text-transform: uppercase; font-size: 0.8rem;
+}
+.toast.show { transform: translateY(0); opacity: 1; }
+
+@media (max-width: 968px) {
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+    .gallery-item:nth-child(1) { grid-column: span 2; height: 400px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .hero-title { font-size: 3.5rem; }
+}
+@media (max-width: 600px) {
+    .glass-search-bar { flex-direction: column; align-items: stretch; padding: 20px; border-radius: 20px; }
+    .search-group { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.2); margin-bottom: 10px; }
+    .search-btn { margin-top: 10px; }
+    .footer-grid { grid-template-columns: 1fr; }
+}
