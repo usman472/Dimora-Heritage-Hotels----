@@ -1,0 +1,263 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Palazzo Venart",
+      "city": "Venice",
+      "region": "Veneto",
+      "tagline": "Venetian Gothic palace on the Grand Canal",
+      "short_description": "16th-century palazzo with original Murano chandeliers, gilded ceilings, and private Grand Canal water entrance. Suites feature Venetian school frescoes and terrazzo floors.",
+      "price_range": "420-450",
+      "amenities": ["Private Grand Canal water entrance", "Original Murano chandeliers", "Rooftop altana", "18th-century Venetian stuccos"],
+      "images": [
+        "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/palazzo-venart.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 2,
+      "name": "Castello di Velona",
+      "city": "Montalcino",
+      "region": "Tuscany",
+      "tagline": "Medieval castle overlooking Val d'Orcia UNESCO site",
+      "short_description": "11th-century castle with baronial hall, monumental fireplace, thermal spa in historic cellars, and Brunello vineyard. Panoramic views of UNESCO Val d'Orcia's rolling hills.",
+      "price_range": "360-445",
+      "amenities": ["Medieval tower XI century", "Thermal spa in historic cellars", "Brunello vineyard", "Val d'Orcia panoramic views"],
+      "images": [
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/castello-di-velona.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 3,
+      "name": "Monastero Santa Rosa",
+      "city": "Conca dei Marini",
+      "region": "Amalfi Coast, Campania",
+      "tagline": "17th-century monastery perched above the Amalfi Coast",
+      "short_description": "Former Benedictine monastery from 1681 with cliffside infinity pool, Michelin-starred restaurant, private beach access, and original frescoed cloister. Panoramic Mediterranean views from every suite.",
+      "price_range": "390-450",
+      "amenities": ["Cliffside infinity pool", "Michelin-starred restaurant", "Private beach access", "17th-century frescoed cloister"],
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/monastero-santa-rosa.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 4,
+      "name": "Masseria Torre Coccaro",
+      "city": "Savelletri di Fasano",
+      "region": "Puglia",
+      "tagline": "Ancient fortified masseria among olive groves",
+      "short_description": "15th-century fortified masseria with medieval watchtower, restored trulli, 20 hectares of ancient olive groves, and Adriatic Sea views. Authentic Puglian cuisine from organic vegetable gardens.",
+      "price_range": "280-370",
+      "amenities": ["Millennial olive grove", "Medieval watchtower", "Natural stone pool", "Organic vegetable garden"],
+      "images": [
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/masseria-torre-coccaro.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 5,
+      "name": "Belmond Villa San Michele",
+      "city": "Fiesole",
+      "region": "Tuscany",
+      "tagline": "Former monastery with loggia designed by Michelangelo",
+      "short_description": "15th-century Franciscan monastery with Michelangelo-attributed façade. Renaissance loggia overlooking Florence and Duomo, heated panoramic pool, frescoed cloister, and Michelin-starred La Loggia restaurant.",
+      "price_range": "380-450",
+      "amenities": ["Michelangelo-attributed façade", "Renaissance loggia overlooking Florence", "Heated panoramic pool", "15th-century frescoed cloister"],
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/villa-san-michele.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 6,
+      "name": "Palazzo Avino",
+      "city": "Ravello",
+      "region": "Amalfi Coast, Campania",
+      "tagline": "12th-century palace with terraced gardens above Amalfi",
+      "short_description": "12th-century noble palace with Michelin-starred terrace restaurant Rossellinis, heated infinity pool, Amalfi lemon gardens, and original Vietri ceramic floors. Private beach club at Marmorata.",
+      "price_range": "370-445",
+      "amenities": ["Michelin-starred terrace restaurant", "Heated infinity pool", "Private beach club", "Original Vietri ceramic floors"],
+      "images": [
+        "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/palazzo-avino.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 7,
+      "name": "Borgo Santo Pietro",
+      "city": "Chiusdino",
+      "region": "Tuscany",
+      "tagline": "Medieval borgo with organic farm and spa sanctuary",
+      "short_description": "13th-century restored borgo with 300-acre organic estate including vineyards, olive groves, and ancient forests. Crystal greenhouse spa, Michelin farm-to-table restaurant, private consecrated chapel.",
+      "price_range": "350-440",
+      "amenities": ["300-acre organic estate", "Crystal greenhouse spa", "Michelin farm-to-table restaurant", "Private consecrated chapel"],
+      "images": [
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/borgo-santo-pietro.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 8,
+      "name": "Villa Cimbrone",
+      "city": "Ravello",
+      "region": "Amalfi Coast, Campania",
+      "tagline": "Historic villa with the Terrace of Infinity",
+      "short_description": "11th-century villa with UNESCO-view Terrace of Infinity, Romanesque medieval cloister, historic rose gardens, and neoclassical sculpture collection. 360-degree Amalfi Coast panoramas.",
+      "price_range": "310-400",
+      "amenities": ["Terrace of Infinity UNESCO views", "11th-century Romanesque cloister", "Historic rose gardens", "Neoclassical sculpture collection"],
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/villa-cimbrone.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 9,
+      "name": "Castello di Casole",
+      "city": "Casole d'Elsa",
+      "region": "Tuscany",
+      "tagline": "10th-century Tuscan castle estate with spa and vineyard",
+      "short_description": "10th-century Longobard castle with 4,200-acre estate, historic Chianti Classico vineyard, vineyard spa with vinotherapy treatments, and private villas with pools. Restaurant Tosca serves regional cuisine.",
+      "price_range": "330-425",
+      "amenities": ["10th-century Longobard tower", "4,200-acre estate", "Vineyard spa with vinotherapy", "Private villas with pools"],
+      "images": [
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/castello-di-casole.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 10,
+      "name": "Verdura Resort",
+      "city": "Sciacca",
+      "region": "Sicily",
+      "tagline": "Rocco Forte estate on Sicily's ancient coast",
+      "short_description": "570-acre Mediterranean estate with private golden sand beach, thalassotherapy spa, Nero d'Avola vineyard, and villas with Caltagirone ceramic details. Six restaurants with Sicilian contemporary cuisine.",
+      "price_range": "320-415",
+      "amenities": ["570-acre Mediterranean estate", "Private golden sand beach", "Thalassotherapy spa", "Nero d'Avola vineyard"],
+      "images": [
+        "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/verdura-golf-spa-resort.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 11,
+      "name": "Belmond Villa Sant'Andrea",
+      "city": "Taormina",
+      "region": "Sicily",
+      "tagline": "Belle Époque villa with private beach in Taormina",
+      "short_description": "1830s Liberty-style villa on the Bay of Sirens with private beach, subtropical terraced gardens, original frescoes, and Etna wine cellar. Gourmet restaurant with local seafood and Teatro Greco views.",
+      "price_range": "340-430",
+      "amenities": ["Private beach on Bay of Sirens", "Subtropical terraced gardens", "Liberty-style frescoes", "Etna wine cellar"],
+      "images": [
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/villa-santandrea.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 12,
+      "name": "Rosewood Castiglion del Bosco",
+      "city": "Montalcino",
+      "region": "Tuscany",
+      "tagline": "Medieval borgo in Brunello wine territory",
+      "short_description": "11th-century castle and borgo with organic Brunello DOCG vineyard, Michelin-starred restaurant Campo del Drago, Romanesque frescoed chapel, and 18-hole golf course on 2,000-acre estate.",
+      "price_range": "360-440",
+      "amenities": ["11th-century castle and borgo", "Organic Brunello vineyard", "Michelin-starred restaurant", "18-hole golf course"],
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/rosewood-castiglion-del-bosco.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 13,
+      "name": "Relais Santa Croce",
+      "city": "Florence",
+      "region": "Tuscany",
+      "tagline": "Renaissance palace steps from Santa Croce Basilica",
+      "short_description": "18th-century Renaissance palace with frescoed ballroom, Michelin-starred rooftop restaurant Guelfi e Ghibellini, original Renaissance furnishings, and Santa Croce Basilica views. Exclusive spa with hammam.",
+      "price_range": "350-435",
+      "amenities": ["18th-century frescoed ballroom", "Michelin-starred rooftop restaurant", "Original Renaissance furnishings", "Santa Croce Basilica views"],
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/relais-santa-croce.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 14,
+      "name": "Palazzo Tornabuoni",
+      "city": "Florence",
+      "region": "Tuscany",
+      "tagline": "Renaissance elegance in the heart of Florence",
+      "short_description": "16th-century palazzo with Renaissance master-frescoed ceilings, monumental Carrara marble staircase, rooftop terrace with Duomo views, and private art collection. Renaissance library with rare volumes.",
+      "price_range": "380-450",
+      "amenities": ["Frescoed ceilings", "Rooftop terrace with Duomo views", "Renaissance library", "Private art collection"],
+      "images": [
+        "https://images.unsplash.com/photo-1594643781854-fde622fc5ef1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/palazzo-tornabuoni.html?aid=YOUR_AFFILIATE_ID"
+    },
+    {
+      "id": 15,
+      "name": "Villa La Pietra",
+      "city": "Fiesole",
+      "region": "Tuscany",
+      "tagline": "Historic villa among Tuscan hills and cypress trees",
+      "short_description": "1580 noble villa with 15 hectares of Chianti vineyards and Italian Renaissance gardens. Frescoed private chapel, historic lemon house, barrel-vaulted wine cellar, and organic olive oil production.",
+      "price_range": "320-420",
+      "amenities": ["Private Chianti vineyard", "Frescoed chapel", "Italian Renaissance gardens", "Organic olive oil production"],
+      "images": [
+        "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?auto=format&fit=crop&w=800&q=80"
+      ],
+      "booking_url": "https://www.booking.com/hotel/it/villa-la-pietra.html?aid=YOUR_AFFILIATE_ID"
+    }
+  ],
+  "hero": {
+    "heading": "Experience Italy's Living History",
+    "subheading": "Discover meticulously restored palazzos, noble villas, and ancient masserie where centuries of Italian artistry, elegance, and tradition welcome the discerning traveler.",
+    "cta": "Discover Dimora"
+  },
+  "social_captions": [
+    "🏛️ Sleep where Italian nobility once walked. These heritage palazzos and villas aren't just hotels—they're living museums of centuries-old elegance. Which would you choose? 🇮🇹 #DimoraHeritage #LuxuryTravel",
+    "🍷 Tuscany's best-kept secrets: medieval castles turned luxury retreats, complete with private Brunello vineyards and infinity pools overlooking Val d'Orcia. Slow travel at its finest. 🌄 #TuscanyTravel #SlowTravel",
+    "🌊 Waking up in a 17th-century monastery perched above the Amalfi Coast, infinity pool hanging over the Mediterranean... This is the Italy you've been dreaming of. ☀️ #AmalfiCoast #HeritageHotels",
+    "⛪ From Venetian palazzos with Murano chandeliers to Puglian masserie among ancient olive groves—discover Italy's most authentic luxury stays. Tag someone you'd take here! 💫 #ItalyTravel #BoutiqueHotels",
+    "🏰 Medieval castles, Renaissance villas, converted monasteries... These aren't your average hotels. Each one tells a story spanning centuries. Which era calls to you? 📚 #HistoricHotels #ItalianHeritage",
+    "🫒 Puglia's secret: fortified masserie from the 1400s, where millennial olive trees meet modern luxury. Trulli, stone pools, and the most authentic Italian experience you'll find. 🇮🇹 #PugliaTravel #Masseria",
+    "🎨 Frescoed ceilings, gilded ballrooms, terrazzo floors—these palazzos are living art galleries. And you get to sleep in them. Which detail catches your eye? 🖼️ #ItalianArt #LuxuryDesign",
+    "🌅 The Terrace of Infinity in Ravello. Need we say more? Villa Cimbrone has been stealing hearts since the 11th century. 🌺 #Ravello #TravelGoals",
+    "🍇 Sleep in an 11th-century castle, wake to vineyard views, sip estate Brunello on your terrace. This is why we travel to Italy. 🍷 #WineTravel #TuscanyCalling",
+    "✨ Not just a hotel room—a piece of Italian history that's yours for the night. From €280/night, experience heritage luxury that money usually can't buy. Link in bio 🔗 #HeritageTravel #ItalyLuxury"
+  ],
+  "seo_keywords_english": "Italian heritage hotels, luxury historic villas Italy, Tuscan palazzo hotels, authentic masseria Puglia, historic castle stays Italy, Italian noble residences, boutique heritage hotels Italy, Renaissance villa Italy, luxury agriturismo Tuscany, Amalfi Coast historic hotels",
+  "meta_description": "Discover Italy's finest heritage hotels - authentic palazzos, historic villas, and luxury masserie. Curated slow travel experiences in Tuscany, Amalfi Coast, Sicily, and beyond. Book your piece of Italian history."
+}

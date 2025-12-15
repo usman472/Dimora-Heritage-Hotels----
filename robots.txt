@@ -1,0 +1,12 @@
+# Dimora Heritage - Robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
